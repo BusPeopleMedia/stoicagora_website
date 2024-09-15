@@ -15,6 +15,7 @@ import {
   Outline,
   Span,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
@@ -33,22 +34,26 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+        <CustomNavLinkSmall>
+          <Link to={'/about'}>
+            <Span>{t("About")}</Span>
+          </Link>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        {/* <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
         >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
+          <Link to={'/contact'}>
+            <Span>
+              <Button>{t("Contact")}</Button>
+            </Span>
+          </Link>
+
         </CustomNavLinkSmall>
       </>
     );
@@ -59,7 +64,8 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <h1 style={{ marginBottom: 0 }}>Agora</h1>
+            {/* <SvgIcon src="/img/icons/agora_icon.png" width="101px" height="64px" /> */}
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -82,7 +88,7 @@ const Header = ({ t }: { t: TFunction }) => {
           <MenuItem />
         </Drawer>
       </Container>
-    </HeaderSection>
+    </HeaderSection >
   );
 };
 

@@ -52,41 +52,51 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <Large to="/contact">
+
+                <Para>
+                  {t(`Do you have any question? Feel free to reach out.`)}
+                </Para>
+              </Large>
+
+              {/* <a href="mailto:l.qqbadze@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </a> */}
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/">{t("Application Security")}</Large>
               <Large to="/">{t("Software Principles")}</Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            </Col> */}
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large to="/">{t("Support Center")}</Large>
               <Large to="/">{t("Customer Support")}</Large>
+            </Col> */}
+            <Col lg={8} md={8} sm={12} xs={12}>
+              <Title>{t("Company")}</Title>
+              <Large to="/about">{t("About")}</Large>
+              <Large to="/tos">{t("Terms of Service")}</Large>
+              <Large to="/community-guidelines">{t("Community Guidelines")}</Large>
+              <Large to="/privacy">{t("Privacy")}</Large>
             </Col>
           </Row>
           <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
+            {/* <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
               <Para>Rancho Santa Margarita</Para>
               <Para>2131 Elk Street</Para>
               <Para>California</Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            </Col> */}
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
               <Large to="/">{t("About")}</Large>
               <Large to="/">{t("Blog")}</Large>
               <Large to="/">{t("Press")}</Large>
               <Large to="/">{t("Careers & Culture")}</Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            </Col> */}
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -106,11 +116,11 @@ const Footer = ({ t }: { t: TFunction }) => {
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
-      <Extra>
+      {/* <Extra>
         <Container border={true}>
           <Row
             justify="space-between"
@@ -159,7 +169,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </FooterContainer>
           </Row>
         </Container>
-      </Extra>
+      </Extra> */}
     </>
   );
 };

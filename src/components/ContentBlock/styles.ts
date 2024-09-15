@@ -3,12 +3,17 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 5rem 0 8rem;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
   }
 `;
+
+export const BackgroundContainer = styled('div')`
+  background-color: #282828;
+  border-radius: 5%;
+`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
@@ -17,6 +22,8 @@ export const Content = styled("p")`
 export const StyledRow = styled(Row)`
   flex-direction: ${({ direction }: { direction: string }) =>
     direction === "left" ? "row" : "row-reverse"};
+    background-color: #282828;
+    border-radius: 1.25rem;
 `;
 
 export const ContentWrapper = styled("div")`
@@ -33,6 +40,11 @@ export const ServiceWrapper = styled("div")`
   justify-content: space-between;
   max-width: 100%;
 `;
+
+export const Title = styled("h6")`
+  color: white;
+  text-align: center;
+`
 
 export const MinTitle = styled("h6")`
   font-size: 15px;

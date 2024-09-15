@@ -9,7 +9,7 @@ export const FooterSection = styled("footer")`
 export const Title = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: black;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -44,7 +44,7 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #18216d;
+  color: black;
   font-size: 14px;
   width: 70%;
 `;
@@ -62,9 +62,9 @@ export const Large = styled(Link)`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: #282828;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: #282828 underline;
   }
 `;
 
@@ -129,7 +129,7 @@ export const FooterContainer = styled("div")`
 export const Language = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: black;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;

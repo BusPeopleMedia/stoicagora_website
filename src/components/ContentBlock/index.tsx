@@ -14,7 +14,10 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  BackgroundContainer,
+  Title,
 } from "./styles";
+const mock = require("../../assets/mock_1.png")
 
 const ContentBlock = ({
   icon,
@@ -35,6 +38,7 @@ const ContentBlock = ({
 
   return (
     <ContentSection>
+      {/* <BackgroundContainer> */}
       <Fade direction={direction} triggerOnce>
         <StyledRow
           justify="space-between"
@@ -43,43 +47,56 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <ContentWrapper>
+              <Content style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <Title>{t(title)}</Title>
+                {id === 'app' && <a
+                  href="https://apps.apple.com/no/app/stoic-community-with-agora/id6450792203"
+                  target="_blank"
+                  style={{ display: 'flex', justifyContent: 'center' }}
+                >
+                  <img src="https://cdn.prod.website-files.com/5df252114bb8c8dafbed787d/645f72ed7dfa8db5bacd3e81_Apple%20Store%20Badge.webp" loading="eager" width="167" alt="Download on the App Store button." />
+                </a>}
+              </Content>
+            </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              {direction === "right" ? (
-                <ButtonWrapper>
+              <Content style={{ display: 'flex', justifyContent: 'center' }}>
+                <SvgIcon src={icon} width="70%" height="100%" />
+                {/* <img src={mock} loading="eager" width="60%" height={"100%"} alt="Download on the App Store button." /> */}
+              </Content>
+              {/* {direction === "right" ? (
+                  <ButtonWrapper>
                   {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
+                  button.map(
+                    (
+                      item: {
+                        color?: string;
                           title: string;
                         },
                         id: number
                       ) => {
                         return (
                           <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo("about")}
+                          key={id}
+                          color={item.color}
+                          onClick={() => scrollTo("about")}
                           >
-                            {t(item.title)}
+                          {t(item.title)}
                           </Button>
                         );
                       }
                     )}
-                </ButtonWrapper>
-              ) : (
-                <ServiceWrapper>
-                  <Row justify="space-between">
+                    </ButtonWrapper>
+                  ) : (
+                    <ServiceWrapper>
+                    <Row justify="space-between">
                     {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
+                    section.map(
+                      (
+                        item: {
+                          title: string;
                             content: string;
                             icon: string;
                           },
@@ -87,25 +104,27 @@ const ContentBlock = ({
                         ) => {
                           return (
                             <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
+                            <SvgIcon
+                            src={item.icon}
+                            width="60px"
+                            height="60px"
+                            />
+                            <MinTitle>{t(item.title)}</MinTitle>
+                            <MinPara>{t(item.content)}</MinPara>
                             </Col>
                           );
                         }
                       )}
-                  </Row>
-                </ServiceWrapper>
-              )}
+                      </Row>
+                      </ServiceWrapper>
+                    )} */}
             </ContentWrapper>
           </Col>
         </StyledRow>
       </Fade>
+      {/* </BackgroundContainer> */}
     </ContentSection>
+
   );
 };
 
