@@ -1,7 +1,5 @@
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import CommunityContent from "../../content/CommunityContent.json"
 import Title from "antd/lib/typography/Title";
 import { TextWrapper } from "../../components/Block/styles";
 import { ContentSection } from "../../components/ContentBlock/styles";
@@ -13,7 +11,6 @@ const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const mock1 = require('../../assets/mock_1.png')
 const mock2 = require('../../assets/mock_2.png')
 const mock3 = require('../../assets/mock_3.png')
-const mock4 = require('../../assets/mock_4.png')
 const mock5 = require('../../assets/mock_5.png')
 const mock6 = require('../../assets/mock_6.png')
 
@@ -71,6 +68,7 @@ const Home = () => {
               <a
                 href="https://apps.apple.com/no/app/stoic-community-with-agora/id6450792203"
                 target="_blank"
+                rel="noreferrer"
                 style={{ display: 'flex', justifyContent: 'center' }}
               >
                 <img src="https://cdn.prod.website-files.com/5df252114bb8c8dafbed787d/645f72ed7dfa8db5bacd3e81_Apple%20Store%20Badge.webp" loading="eager" width="167" alt="Download on the App Store button." />

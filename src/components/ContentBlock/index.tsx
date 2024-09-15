@@ -11,7 +11,6 @@ import {
   StyledRow,
   Title,
 } from "./styles";
-const mock = require("../../assets/mock_1.png")
 
 const ContentBlock = ({
   icon,
@@ -23,12 +22,6 @@ const ContentBlock = ({
   id,
   direction,
 }: ContentBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
 
   return (
     <ContentSection>
@@ -47,6 +40,7 @@ const ContentBlock = ({
                 {id === 'app' && <a
                   href="https://apps.apple.com/no/app/stoic-community-with-agora/id6450792203"
                   target="_blank"
+                  rel="noreferrer"
                   style={{ display: 'flex', justifyContent: 'center' }}
                 >
                   <img src="https://cdn.prod.website-files.com/5df252114bb8c8dafbed787d/645f72ed7dfa8db5bacd3e81_Apple%20Store%20Badge.webp" loading="eager" width="167" alt="Download on the App Store button." />
