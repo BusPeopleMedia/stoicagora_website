@@ -1,20 +1,14 @@
-import { Row, Col } from "antd";
+import { Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
-import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
   Content,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
   StyledRow,
-  ButtonWrapper,
-  BackgroundContainer,
   Title,
 } from "./styles";
 const mock = require("../../assets/mock_1.png")
