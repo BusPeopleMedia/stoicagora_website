@@ -8,7 +8,9 @@ export const ContactContainer = styled("div")`
   }
 `;
 
-export const FormGroup = styled("form")`
+export const FormGroup = styled("form").attrs({
+  netlify: true
+})`
   width: 100%;
   max-width: 520px;
 
