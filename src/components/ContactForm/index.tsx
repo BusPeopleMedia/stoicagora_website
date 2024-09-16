@@ -28,8 +28,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
-            {/* <FormGroup data-netlify="true" name="contact" method="POST" autoComplete="off" onSubmit={handleSubmit}> */}
-            <form data-netlify="true" name="contact" method="POST" autoComplete="off" onSubmit={handleSubmit}>
+            <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
               {/* Hidden input for Netlify to identify the form */}
               <input type="hidden" name="form-name" value="contact" />
               <Col span={24}>
