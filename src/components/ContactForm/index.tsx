@@ -30,7 +30,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
           <Slide direction="right" triggerOnce>
             <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
               {/* Hidden input for Netlify to identify the form */}
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="contact" value="contact" />
               <Col span={24}>
                 <Input
                   type="text"
