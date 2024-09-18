@@ -28,7 +28,7 @@ const ContentBlock = ({
       {/* <BackgroundContainer> */}
       <Fade direction={direction} triggerOnce>
         <StyledRow
-          justify="space-between"
+          justify="center"
           align="middle"
           id={id}
           direction={direction}
