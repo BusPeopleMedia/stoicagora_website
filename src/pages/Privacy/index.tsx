@@ -42,7 +42,7 @@ const Home = () => {
                             "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote
                             for election of directors or other managing authority.</li>
 
-                        <li>Application refers to Simply Stoic, the software program provided by the Company.</li>
+                        <li>Application refers to Agora, the software program provided by the Company.</li>
                         <li>
                             Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Bus People
                             Media, LLC, 916 E 32nd St., 201, Austin TX 78705.</li>
