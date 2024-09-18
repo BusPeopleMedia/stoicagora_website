@@ -28,36 +28,36 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    // const url = ""; // Fill in your API URL here
-
+    const URL = "https://1bjisxx623.execute-api.us-east-1.amazonaws.com/v6/feedback";
     try {
       if (Object.values(errors).every((error) => error === "")) {
-        // const response = await fetch(url, {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify(values),
-        // });
 
-        // if (!response.ok) {
-        //   notification["error"]({
-        //     message: "Error",
-        //     description:
-        //       "There was an error sending your message, please try again later.",
-        //   });
-        // } else {
-        event.target.reset();
-        setFormState(() => ({
-          values: { ...initialValues },
-          errors: { ...initialValues },
-        }));
-
-        notification["success"]({
-          message: "Success",
-          description: "Your message has been sent!",
+        const response = await fetch(URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values)
         });
-        // }
+
+        if (!response.ok) {
+          notification["error"]({
+            message: "Error",
+            description:
+              "There was an error sending your message, please try again later.",
+          });
+        } else {
+          event.target.reset();
+          setFormState(() => ({
+            values: { ...initialValues },
+            errors: { ...initialValues },
+          }));
+
+          notification["success"]({
+            message: "Success",
+            description: "Your message has been sent!",
+          });
+        }
       }
     } catch (error) {
       notification["error"]({

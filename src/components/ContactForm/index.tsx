@@ -8,10 +8,10 @@ import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
-import { ContactContainer, Span, ButtonContainer } from "./styles";
+import { ContactContainer, Span, ButtonContainer, FormGroup } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
-  const { values, errors, handleChange } = useForm(validate);
+  const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type as keyof typeof errors];
@@ -28,9 +28,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
-            <form name="contact" method="POST" data-netlify="true" >
-              {/* Hidden input for Netlify to identify the form */}
-              <input type="hidden" name="contact" value="contact" />
+            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input
                   type="text"
@@ -63,8 +61,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <ButtonContainer>
                 <Button name="submit" type="submit">{t("Submit")}</Button>
               </ButtonContainer>
-            </form>
-            {/* </FormGroup> */}
+            </FormGroup>
           </Slide>
         </Col>
       </Row>
