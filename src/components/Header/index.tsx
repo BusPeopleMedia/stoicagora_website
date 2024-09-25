@@ -13,6 +13,7 @@ import {
   Label,
   Outline,
   Span,
+  CustomSmallAnchor,
 } from "./styles";
 import { Link } from "react-router-dom";
 
@@ -37,15 +38,10 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall> */}
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-        >
+        <CustomNavLinkSmall>
           <Link to={'/contact'}>
-            <Span>
-              <Button>{t("Contact")}</Button>
-            </Span>
+            <Span>{t("Contact")}</Span>
           </Link>
-
         </CustomNavLinkSmall>
       </>
     );
@@ -59,7 +55,7 @@ const Header = ({ t }: { t: TFunction }) => {
             <h1 style={{ marginBottom: 0 }}>Agora</h1>
             {/* <SvgIcon src="/img/icons/agora_icon.png" width="101px" height="64px" /> */}
           </LogoContainer>
-          <NotHidden>
+          <NotHidden >
             <MenuItem />
           </NotHidden>
           <Burger onClick={toggleButton}>

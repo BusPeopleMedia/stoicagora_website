@@ -10,6 +10,7 @@ import {
   ContentWrapper,
   StyledRow,
   Title,
+  BottomContentWrapper,
 } from "./styles";
 
 const ContentBlock = ({
@@ -38,7 +39,7 @@ const ContentBlock = ({
               <Content style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                 <Title>{t(title)}</Title>
                 {id === 'app' && <a
-                  href="https://apps.apple.com/no/app/stoic-community-with-agora/id6450792203"
+                  href="https://apps.apple.com/app/apple-store/id6450792203?pt=126019604&ct=StoicAgora&mt=8"
                   target="_blank"
                   rel="noreferrer"
                   style={{ display: 'flex', justifyContent: 'center' }}
@@ -49,7 +50,7 @@ const ContentBlock = ({
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
+            <BottomContentWrapper>
               <Content style={{ display: 'flex', justifyContent: 'center' }}>
                 <SvgIcon src={icon} width="70%" height="100%" />
                 {/* <img src={mock} loading="eager" width="60%" height={"100%"} alt="Download on the App Store button." /> */}
@@ -106,7 +107,7 @@ const ContentBlock = ({
                       </Row>
                       </ServiceWrapper>
                     )} */}
-            </ContentWrapper>
+            </BottomContentWrapper>
           </Col>
         </StyledRow>
       </Fade>

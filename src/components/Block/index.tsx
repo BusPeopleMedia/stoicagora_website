@@ -5,14 +5,18 @@ interface Props {
   title: string;
   content: string;
   t: TFunction;
+  block?: boolean
 }
 
-const Block = ({ title, content, t }: Props) => {
+const Block = ({ title, content, block, t }: Props) => {
   return (
     <Container>
       <h6>{t(title)}</h6>
       <TextWrapper>
-        <Content>{t(content)}</Content>
+        <Content>{content}</Content>
+        {block && <Content>
+          Please refer to our Privacy page to understand our data policies.
+        </Content>}
       </TextWrapper>
     </Container>
   );

@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 5rem 0 3rem;
-  width: 70%;
+  padding: 1rem 0 3rem;
+  width: 100%;
   margin: auto;
 
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+    padding: 2rem 0 4rem;
   }
 `;
 
@@ -37,6 +37,15 @@ export const ContentWrapper = styled("div")`
   }
 `;
 
+export const BottomContentWrapper = styled("div")`
+  position: relative;
+  max-width: 540px;
+
+  @media only screen and (max-width: 575px) {
+    padding-top: 0rem;
+  }
+`;
+
 export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
@@ -47,6 +56,8 @@ export const Title = styled("h6")`
   font-size: 30px;
   color: white;
   text-align: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
 `
 
 export const MinTitle = styled("h6")`

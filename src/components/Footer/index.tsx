@@ -12,6 +12,7 @@ import {
   FooterContainer,
 } from "./styles";
 const instagram = require("../../assets/instagram.svg")
+const facebook = require("../../assets/facebook.png")
 
 interface SocialLinkProps {
   href: string;
@@ -46,7 +47,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/contact">
 
                 <Para>
-                  {t(`Do you have any question? Feel free to reach out.`)}
+                  {`Do you have any question? Feel free to reach out.`}
                 </Para>
               </Large>
 
@@ -134,10 +135,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src={instagram}
               />
               {/* <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
+                href="https://www.facebook.com/profile.php?id=61552060892213"
+                src={facebook}
+              /> */}
+              {/*<SocialLink
                 href="https://www.linkedin.com/in/lasha-kakabadze/"
                 src="linkedin.svg"
               />

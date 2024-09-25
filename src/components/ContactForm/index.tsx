@@ -18,12 +18,14 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     return <Span>{ErrorMessage}</Span>;
   };
 
+  const deletionPolicy = `We care about your privacy. If you wish to delete your account, fill out the above form with your name and email address in the body of the message. You can also delete your account from the Settings menu within the app.`
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
+            <Block title={""} content={deletionPolicy} block={true} />
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>

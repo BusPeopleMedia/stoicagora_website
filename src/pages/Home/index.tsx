@@ -20,21 +20,21 @@ const Home = () => {
       <ScrollToTop />
       <ContentBlock
         direction="right"
-        title={"Start your free trial today"}
+        title={"Start your free trial today."}
         content={MissionContent.text}
         icon={mock1}
         id="app"
       />
       <ContentBlock
         direction="left"
-        title={"No one grows in isolation"}
+        title={"No one grows in isolation."}
         content={MissionContent.text}
         icon={mock2}
         id="testimonial"
       />
       <ContentBlock
         direction="right"
-        title={"Gain insight & support from others"}
+        title={"Gain insight & support from others."}
         content={MissionContent.text}
         icon={mock3}
         id="community"
@@ -48,14 +48,14 @@ const Home = () => {
       /> */}
       <ContentBlock
         direction="left"
-        title={"Meditate on a daily quote with guided prompts"}
+        title={"Meditate on a daily quote with guided prompts."}
         content={MissionContent.text}
         icon={mock5}
         id="prompt"
       />
       <ContentBlock
         direction="right"
-        title={"The tools you need to grow resilient"}
+        title={"The tools you need to grow resilient."}
         content={MissionContent.text}
         icon={mock6}
         id="mission"
@@ -63,10 +63,10 @@ const Home = () => {
       <ContentSection>
         <Container>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <Title>Join the only stoic community</Title>
+            <Title style={{ textAlign: 'center' }}>Join the only Stoic community.</Title>
             <TextWrapper>
               <a
-                href="https://apps.apple.com/no/app/stoic-community-with-agora/id6450792203"
+                href="https://apps.apple.com/app/apple-store/id6450792203?pt=126019604&ct=StoicAgora&mt=8"
                 target="_blank"
                 rel="noreferrer"
                 style={{ display: 'flex', justifyContent: 'center' }}

@@ -313,7 +313,7 @@ const Home = () => {
                             By email: admin@buspeoplemedia.com
                         </li>
                         <li>
-                            By visiting this page on our website: http://www.buspeoplemedia.com/contact
+                            By visiting this page on our website: https://stoicagora.com/contact
                         </li>
                     </ul>
                 </p>
