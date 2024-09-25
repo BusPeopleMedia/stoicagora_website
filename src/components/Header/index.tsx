@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
-import { Button } from "../../common/Button";
 import {
   HeaderSection,
   LogoContainer,
@@ -12,8 +11,7 @@ import {
   CustomNavLinkSmall,
   Label,
   Outline,
-  Span,
-  CustomSmallAnchor,
+  Span
 } from "./styles";
 import { Link } from "react-router-dom";
 

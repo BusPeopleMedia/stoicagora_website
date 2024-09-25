@@ -12,7 +12,7 @@ import {
   FooterContainer,
 } from "./styles";
 const instagram = require("../../assets/instagram.svg")
-const facebook = require("../../assets/facebook.png")
+// const facebook = require("../../assets/facebook.png")
 
 interface SocialLinkProps {
   href: string;
