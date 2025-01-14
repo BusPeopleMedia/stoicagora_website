@@ -8,7 +8,7 @@ export const ContentSection = styled("section")`
   margin: auto;
 
   @media only screen and (max-width: 1024px) {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 1rem;
   }
 `;
 
@@ -38,7 +38,7 @@ export const ContentWrapper = styled("div")`
 `;
 
 export const BottomContentWrapper = styled("div")`
-  position: relative;
+  // position: relative;
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {

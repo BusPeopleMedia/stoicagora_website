@@ -52,7 +52,7 @@ const ContentBlock = ({
           <Col lg={11} md={11} sm={11} xs={24}>
             <BottomContentWrapper>
               <Content style={{ display: 'flex', justifyContent: 'center' }}>
-                <SvgIcon src={icon} width="70%" height="100%" />
+                <SvgIcon src={icon} width="65%" height="100%" />
                 {/* <img src={mock} loading="eager" width="60%" height={"100%"} alt="Download on the App Store button." /> */}
               </Content>
               {/* {direction === "right" ? (
