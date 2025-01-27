@@ -12,6 +12,7 @@ import {
   Title,
   BottomContentWrapper,
 } from "./styles";
+import { useEffect, useState } from "react";
 
 const ContentBlock = ({
   icon,
@@ -23,6 +24,22 @@ const ContentBlock = ({
   id,
   direction,
 }: ContentBlockProps) => {
+  const [alt, setAlt] = useState('')
+
+  useEffect(() => {
+    if (title === "Start your free trial today.") {
+      setAlt("The happiness of your life depends on the quality of your thoughts: a quote by Marcus Aurelius.")
+    } else if (title === "No one grows in isolation.") {
+      setAlt("This is the first app that has gotten me to practice journaling on a regular basis.")
+    } else if (title === "Gain insight & support from others.") {
+      setAlt("Screenshot of app with Marcus Aurelius quote and user journals.")
+    } else if (title === "Meditate on a daily quote with guided prompts.") {
+      setAlt("Screenshot of app with a prompt.")
+    } else if (title === "The tools you need to grow resilient.") {
+      setAlt("App user statistics for thoughts submitted and other data.")
+    }
+  }, [])
+
 
   return (
     <ContentSection>
@@ -52,7 +69,7 @@ const ContentBlock = ({
           <Col lg={11} md={11} sm={11} xs={24}>
             <BottomContentWrapper>
               <Content style={{ display: 'flex', justifyContent: 'center' }}>
-                <SvgIcon src={icon} width="65%" height="100%" />
+                <SvgIcon src={icon} alt={alt} width="65%" height="100%" />
                 {/* <img src={mock} loading="eager" width="60%" height={"100%"} alt="Download on the App Store button." /> */}
               </Content>
               {/* {direction === "right" ? (
