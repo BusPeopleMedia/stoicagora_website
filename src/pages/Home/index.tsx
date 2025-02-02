@@ -21,6 +21,7 @@ const Home = () => {
       <ContentBlock
         direction="right"
         title={"Start your free trial today."}
+        subtitle={"Stoicism in 10 minutes a day."}
         content={MissionContent.text}
         icon={mock1}
         id="app"
@@ -28,34 +29,31 @@ const Home = () => {
       <ContentBlock
         direction="left"
         title={"No one grows in isolation."}
+        subtitle={"Joining a community of people cultivating a Stoic mindset."}
         content={MissionContent.text}
         icon={mock2}
         id="testimonial"
       />
       <ContentBlock
         direction="right"
-        title={"Gain insight & support from others."}
+        title={"Grow with the community."}
+        subtitle={"Gain insight & support from others."}
         content={MissionContent.text}
         icon={mock3}
         id="community"
       />
-      {/* <ContentBlock
-        direction="left"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon={mock4}
-        id="mission"
-      /> */}
       <ContentBlock
         direction="left"
-        title={"Meditate on a daily quote with guided prompts."}
+        title={"Journal with purpose."}
+        subtitle={"Meditate on a daily quote with guided prompts."}
         content={MissionContent.text}
         icon={mock5}
         id="prompt"
       />
       <ContentBlock
         direction="right"
-        title={"The tools you need to grow resilient."}
+        title={`A minimalist blueprint for a Stoic life.`}
+        subtitle={"The tools you need to grow resilient."}
         content={MissionContent.text}
         icon={mock6}
         id="mission"
