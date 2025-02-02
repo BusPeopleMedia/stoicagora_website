@@ -52,7 +52,7 @@ export const ServiceWrapper = styled("div")`
   max-width: 100%;
 `;
 
-export const Title = styled("h6")`
+export const Title = styled("h3")`
   font-size: 30px;
   color: white;
   text-align: center;
@@ -60,13 +60,14 @@ export const Title = styled("h6")`
   margin-left: 2rem;
 `
 
-export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
+export const MinTitle = styled("h4")`
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5rem;
+  color: white;
+  margin: auto;
+  margin-bottom: 1rem;
   padding: 0.5rem 0;
-  text-transform: uppercase;
-  color: #000;
-  font-family: "Motiva Sans Light", sans-serif;
 `;
 
 export const MinPara = styled("p")`

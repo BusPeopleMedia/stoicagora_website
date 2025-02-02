@@ -11,12 +11,14 @@ import {
   StyledRow,
   Title,
   BottomContentWrapper,
+  MinTitle,
 } from "./styles";
 import { useEffect, useState } from "react";
 
 const ContentBlock = ({
   icon,
   title,
+  subtitle,
   content,
   section,
   button,
@@ -55,6 +57,7 @@ const ContentBlock = ({
             <ContentWrapper>
               <Content style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                 <Title>{t(title)}</Title>
+                <MinTitle>{t(subtitle)}</MinTitle>
                 {id === 'app' && <a
                   href="https://apps.apple.com/app/apple-store/id6450792203?pt=126019604&ct=StoicAgora&mt=8"
                   target="_blank"
