@@ -40,7 +40,7 @@ const ContentBlock = ({
     } else if (title === "The tools you need to grow resilient.") {
       setAlt("App user statistics for thoughts submitted and other data.")
     }
-  }, [])
+  }, [title])
 
 
   return (
