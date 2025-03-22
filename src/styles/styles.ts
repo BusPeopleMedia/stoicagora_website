@@ -3,14 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const Styles = createGlobalStyle`
 
     @font-face {
-        font-family: "Motiva Sans Light";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
+        font-family: "Manrope";
+        src: url("/fonts/Manrope-Light.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
-        font-family: "Motiva Sans Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
+        font-family: "Manrope Bold";
+        src: url("/fonts/Manrope-Bold.ttf") format("truetype");
         font-style: normal;
     }
 
@@ -18,7 +18,7 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Manrope', sans-serif;
     }
 
 
@@ -33,7 +33,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #18216d;
+        color: #1B1B1B;
     }
 
     input,
@@ -58,8 +58,8 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: black;
+        font-family: 'Manrope Bold', serif;
+        color: #1B1B1B;
         font-size: 36px;
         line-height: 1.18;
 
@@ -73,7 +73,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: black;
+        color: #1B1B1B;
         font-size: 21px;
         line-height: 1.41;
     }
@@ -85,10 +85,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #282828;
+        color: #1B1B1B;
 
         :hover {
-            color: #2e186a;
+            color: #1B1B1B;
         }
     }
 
