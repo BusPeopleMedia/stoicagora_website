@@ -29,6 +29,7 @@ export const Styles = createGlobalStyle`
         outline: 0;
         background: #fff;
         overflow-x: hidden;
+        background-color: #f1f2f3;
     }
 
     a:hover {
