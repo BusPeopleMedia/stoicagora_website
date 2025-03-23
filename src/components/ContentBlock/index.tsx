@@ -73,60 +73,8 @@ const ContentBlock = ({
             <BottomContentWrapper>
               <Content style={{ display: 'flex', justifyContent: 'center' }}>
                 <SvgIcon src={icon} alt={alt} width="65%" height="100%" />
-                {/* <img src={mock} loading="eager" width="60%" height={"100%"} alt="Download on the App Store button." /> */}
               </Content>
-              {/* {direction === "right" ? (
-                  <ButtonWrapper>
-                  {typeof button === "object" &&
-                  button.map(
-                    (
-                      item: {
-                        color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                          key={id}
-                          color={item.color}
-                          onClick={() => scrollTo("about")}
-                          >
-                          {t(item.title)}
-                          </Button>
-                        );
-                      }
-                    )}
-                    </ButtonWrapper>
-                  ) : (
-                    <ServiceWrapper>
-                    <Row justify="space-between">
-                    {typeof section === "object" &&
-                    section.map(
-                      (
-                        item: {
-                          title: string;
-                            content: string;
-                            icon: string;
-                          },
-                          id: number
-                        ) => {
-                          return (
-                            <Col key={id} span={11}>
-                            <SvgIcon
-                            src={item.icon}
-                            width="60px"
-                            height="60px"
-                            />
-                            <MinTitle>{t(item.title)}</MinTitle>
-                            <MinPara>{t(item.content)}</MinPara>
-                            </Col>
-                          );
-                        }
-                      )}
-                      </Row>
-                      </ServiceWrapper>
-                    )} */}
+              {/* } */}
             </BottomContentWrapper>
           </Col>
         </StyledRow>
