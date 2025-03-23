@@ -6,6 +6,7 @@ export const ContentSection = styled("section")`
   padding: 1rem 0 3rem;
   width: 100%;
   margin: auto;
+  max-width: 50rem;
 
   @media only screen and (max-width: 1024px) {
     padding: 2rem 0 1rem;
@@ -61,13 +62,14 @@ export const Title = styled("h3")`
 `
 
 export const MinTitle = styled("h4")`
+  font-family: "Manrope Thin";
   font-size: 20px;
-  text-align: center;
-  line-height: 1.5rem;
+  text-align: left;
+  line-height: 1.8rem;
   color: white;
   margin: auto;
   margin-bottom: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 3rem;
 `;
 
 export const MinPara = styled("p")`
