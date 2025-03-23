@@ -4,15 +4,17 @@ import Title from "antd/lib/typography/Title";
 import { TextWrapper } from "../../components/Block/styles";
 import { ContentSection } from "../../components/ContentBlock/styles";
 
+
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
-
+const TestimonialCarousel = lazy(() => import("../../components/Carousel"))
 const mock1 = require('../../assets/mock_1.png')
 const mock2 = require('../../assets/mock_2.png')
 const mock3 = require('../../assets/mock_3.png')
 const mock5 = require('../../assets/mock_5.png')
 const mock6 = require('../../assets/mock_6.png')
+const actionMock = require('../../assets/action_mock.png')
 
 const Home = () => {
   return (
@@ -26,37 +28,39 @@ const Home = () => {
         icon={mock1}
         id="app"
       />
+      <TestimonialCarousel />
       <ContentBlock
         direction="left"
-        title={"No one grows in isolation."}
-        subtitle={"Joining a community of people cultivating a Stoic mindset."}
+        title={`A Daily Blueprint for a Stoic Life`}
+        subtitle={"Peace and clarity shouldn’t be complicated. Agora gives you a simple, structured way to practice Stoicism in just 10 minutes a day. Read a quote, reflect, take action, and grow—without distractions or overwhelm."}
         content={MissionContent.text}
-        icon={mock2}
-        id="testimonial"
+        icon={mock6}
+        id="mission"
       />
       <ContentBlock
         direction="right"
-        title={"Grow with the community."}
-        subtitle={"Gain insight & support from others."}
-        content={MissionContent.text}
-        icon={mock3}
-        id="community"
-      />
-      <ContentBlock
-        direction="left"
-        title={"Journal with purpose."}
-        subtitle={"Meditate on a daily quote with guided prompts."}
+        title={"Effortless Reflection, Meaningful Progress"}
+        subtitle={"Most journaling apps leave you staring at a blank page. Agora guides you with a clear Stoic practice—read, act, reflect—all in a minimalist space designed for focus and consistency."}
         content={MissionContent.text}
         icon={mock5}
         id="prompt"
       />
       <ContentBlock
-        direction="right"
-        title={`A minimalist blueprint for a Stoic life.`}
-        subtitle={"The tools you need to grow resilient."}
+        direction="left"
+        title={"Stoicism in Action"}
+        subtitle={"Reflection is powerful, but action creates change. Every day, Agora gives you a simple Stoic act to practice—small, meaningful steps that build resilience, discipline, and inner peace."}
         content={MissionContent.text}
-        icon={mock6}
-        id="mission"
+        icon={actionMock}
+        // icon={mock3}
+        id="community"
+      />
+      <ContentBlock
+        direction="right"
+        title={"A Community of Modern Stoics"}
+        subtitle={"Stoicism isn’t just personal growth—it’s learning from others. With Agora, you’re never alone. Share insights, apply Stoic wisdom in real time, and grow alongside a like-minded community."}
+        content={MissionContent.text}
+        icon={mock3}
+        id="testimonial"
       />
       <ContentSection>
         <Container>
