@@ -1,23 +1,6 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import Slider from "react-slick";
 import { Citation, Container, Grid, Testimonial, Text } from "./styles";
 
 const TestimonialCarousel = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // autoplay: true,
-        speed: 6000,
-        autoplaySpeed: 500,
-        cssEase: "linear",
-        pauseOnHover: true,
-        rows: 2,
-        centerPadding: "60px",
-    };
     const testimonials = [
         {
             review: `As someone who had no clue what stoicism meant, and as an atheist and recovering addict,

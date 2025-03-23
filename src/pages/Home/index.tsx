@@ -10,7 +10,6 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const TestimonialCarousel = lazy(() => import("../../components/Carousel"))
 const mock1 = require('../../assets/mock_1.png')
-const mock2 = require('../../assets/mock_2.png')
 const mock3 = require('../../assets/mock_3.png')
 const mock5 = require('../../assets/mock_5.png')
 const mock6 = require('../../assets/mock_6.png')
