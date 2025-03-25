@@ -70,6 +70,7 @@ export const MinTitle = styled("h4")`
   margin: auto;
   margin-bottom: 1rem;
   padding: 0.5rem 3rem;
+  font-weight: 100;
 `;
 
 export const MinPara = styled("p")`
