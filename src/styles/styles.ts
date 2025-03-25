@@ -3,13 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const Styles = createGlobalStyle`
 
     @font-face {
-        font-family: "Manrope";
+        font-family: "Manrope", sans-serif;
         src: url("/fonts/Manrope-Light.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
-        font-family: "Manrope Bold";
+        font-family: "Manrope Bold", sans-serif;
         src: url("/fonts/Manrope-Bold.ttf") format("truetype");
         font-style: normal;
     }
@@ -58,7 +58,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Manrope Bold', serif;
+        font-family: 'Manrope Bold', sans-serif;
         color: #1B1B1B;
         font-size: 36px;
         line-height: 1.18;

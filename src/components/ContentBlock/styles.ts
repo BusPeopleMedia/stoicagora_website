@@ -62,7 +62,7 @@ export const Title = styled("h3")`
 `
 
 export const MinTitle = styled("h4")`
-  font-family: "Manrope Thin";
+  font-family: "Manrope Thin", sans-serif;
   font-size: 20px;
   text-align: left;
   line-height: 1.8rem;
