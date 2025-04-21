@@ -54,22 +54,23 @@ export const ServiceWrapper = styled("div")`
 `;
 
 export const Title = styled("h3")`
-  font-size: 30px;
+  font-size: 38px;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-right: 2rem;
   margin-left: 2rem;
 `
 
 export const MinTitle = styled("h4")`
   font-family: "Manrope Thin", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   line-height: 1.8rem;
   color: white;
   margin: auto;
   margin-bottom: 1rem;
-  padding: 0.5rem 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   font-weight: 100;
 `;
 

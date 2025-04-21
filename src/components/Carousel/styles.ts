@@ -27,13 +27,13 @@ export const Testimonial = styled("div")`
 `;
 
 export const Text = styled("p")`
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   line-height: 1.8rem;
 `;
 
 export const Citation = styled("span")`
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   line-height: 1.8rem;
 `;
